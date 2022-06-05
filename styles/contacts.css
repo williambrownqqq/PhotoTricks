@@ -1,0 +1,257 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: lighter;
+}
+
+/*сама картинка*/
+.cameraLogo {
+    display: flex;
+    width: 70px;
+    position: fixed;
+}
+
+/*сам квадратик*/
+.webLogo {
+    display: flex;
+    position: fixed;
+    margin: 8px 50px;
+}
+/* brend */
+.photoTricks {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 136px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;
+    ;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+nav.navy {
+    transition: 0.5s;
+    background: rgb(23, 141, 136, .5);
+    height: 90px;
+    width: 100%;
+
+}
+
+nav ul li a.menu,
+nav ul li a:hover {
+    color: aquamarine;
+    /* background: rgb(255, 255, 255);*/
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+
+
+}
+
+.burger {
+    display: flex;
+    position: relative;
+
+    position: relative;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+    float: right;
+
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #fff;
+
+}
+
+.burger {
+    position: fixed;
+    display: none;
+
+}
+
+@media screen and (max-width:1600px) {
+    .burger {
+        display: block;
+    }
+
+    .photoTricks {
+        display: none;
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: rgb(23, 141, 136);
+    }
+
+    nav.black ul {
+        background: rgb(23, 141, 136);
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+
+}
+
+/*   content   */
+.content {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: darkmagenta; */
+}
+
+.contacts {
+
+    /* background-color: aqua; */
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+    /* flex-flow: wrap; */
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    width: 90%;
+    height: 80px;
+    margin-top: 100px;
+}
+
+.photoANDtext {
+    /* background-color: darkblue; */
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap-reverse; */
+    width: 90%;
+    margin-bottom: 195px;
+}
+
+.contactsTXT {
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    /* background-color: brown; */
+    width: 2000px;
+    padding: 30px;
+}
+
+.contactsTXT p {
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 24px;
+    margin: 0;
+    padding: 5px;
+    padding-left: 90px;
+}
+
+.myPhoto {
+    display: flex;
+    justify-content: center;
+
+    min-width: 700px;
+    min-height: auto;
+    height: auto;
+
+    /* background-color:chartreuse; */
+}
+
+.myPhoto img {
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:1800px) {
+    .contactsTXT p {
+       padding: 5px;
+    }
+    .contactsTXT {
+        padding: 30px;
+     }
+}
+@media screen and (max-width:1650px) {
+    .myPhoto{
+        width: 100%;
+    }
+    .photoANDtext {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .contactsTXT p {
+        padding: 20px;
+    }
+
+    .contactsTXT {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .cameraLogo{
+        width: 60px;
+    }
+    /*сам квадратик*/
+    .webLogo{
+        margin: 18px 50px;
+    }
+    }
+    

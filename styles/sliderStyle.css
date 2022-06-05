@@ -1,0 +1,233 @@
+.partners{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(162, 229, 217);
+
+    width: 100%;
+    /* height: 100vh; */
+    color: #fff;
+    padding-bottom: 100px;
+    
+}
+.partnersTitle{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    width: 100%;
+    height: 80px; */
+    /* margin-top: 20%; */
+    /* padding-top: 200px; */
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    width: 100%;
+    height: 80px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.section{
+    margin: 0;
+    padding: 0 10px 0 10px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 160px;
+    margin-top: 50px;
+    /* background: #23E3C9; */
+}
+.slide h1{
+    color: white;
+    padding-left: 20px;
+}
+.imagg {
+  border-radius: 10px;
+    /*   background-color: aqua; */
+}
+.slider{
+    width: 800px;
+    height: 500px;
+    /* border-radius: 10px; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display:flex;
+    border-radius: 10px;
+    
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+    /* border-radius: 10px; */
+    background: rgb(23, 141, 136);
+}
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+
+} 
+.manual-btn{
+    border: 2px solid rgb(23, 141, 136, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 30px;
+}
+.manual-btn:hover{
+    background: rgb(23, 141, 136);
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+ /* .nav-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div{
+    border: 2px solid blueviolet;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+} */
+/*
+.nav-auto div:not(:last-child){
+    margin-right: 30px;
+    justify-content: center;
+}
+#radio1:checked ~ .nav-auto .a-b1{
+    background-color:chartreuse;
+}
+#radio2:checked ~ .nav-auto .a-b2{
+    background-color:chartreuse;
+}
+#radio3:checked ~ .nav-auto .a-b3{
+    background-color:chartreuse;
+}
+#radio4:checked ~ .nav-auto .a-b4{
+    background-color:chartreuse;
+} */
+
+@media screen and (max-width: 1900px){
+    .section{
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+    .partnersTitle{
+        margin-bottom: 20px;
+    }
+}
+
+/* .slider{
+
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+figure{
+    position: relative;
+    left: 0;
+    width: 400%;
+    animation: 10s slide infinite;
+}
+.slide{
+    position: relative;
+    width: 25%;
+    float: left;
+}
+.slide h1{
+    position: absolute;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0,0.5);
+}
+
+.slide img{
+    width: 100%;
+    height: 500px;
+}
+
+@keyframes slide{
+    0%{
+        left: 0;
+    }
+    10%{
+        left: 0;
+    }
+    20%{
+        left: -100%;
+    }
+    30%{
+        left:-100%;
+    }
+    40%{
+        left: -200%;
+    }
+    50%{
+        left:-200%;
+    }
+    55%{
+        left: -300%;
+    }
+    65%{
+        left: -300%;
+    }
+    66%{
+        left: -200%;
+    }
+    74%{
+        left: -200%;
+    }
+    75%{
+        left: -100%;
+    }
+    85%{
+        left: -100%;
+    }
+    90%{
+        left: 0;
+    }
+    1000%{
+        left: 0;
+    }
+
+} */

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: lighter;
+}
+
+/*сама картинка*/
+.cameraLogo {
+    display: flex;
+    width: 70px;
+    position: fixed;
+}
+
+/*сам квадратик*/
+.webLogo {
+    display: flex;
+    position: fixed;
+    margin: 8px 50px;
+}
+/* brend */
+.photoTricks {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 136px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;
+    ;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+nav.navy {
+    transition: 0.5s;
+    background: rgb(23, 141, 136, .5);
+    height: 90px;
+    width: 100%;
+
+}
+
+nav ul li a.menu,
+nav ul li a:hover {
+    color: aquamarine;
+    /* background: rgb(255, 255, 255);*/
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+
+
+}
+
+.burger {
+    display: flex;
+    position: relative;
+
+    position: relative;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+    float: right;
+
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #fff;
+
+}
+
+.burger {
+    position: fixed;
+    display: none;
+
+}
+
+@media screen and (max-width:1600px) {
+    .burger {
+        display: block;
+    }
+
+    .photoTricks {
+        display: none;
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: rgb(23, 141, 136);
+    }
+
+    nav.black ul {
+        background: rgb(23, 141, 136);
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .cameraLogo{
+        width: 60px;
+    }
+    /*сам квадратик*/
+    .webLogo{
+        margin: 18px 50px;
+    }
+    }
+    

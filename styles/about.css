@@ -1,0 +1,94 @@
+/* .content {
+    width: 94%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+} */
+.content{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.aboutProject{
+    
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    /* flex-flow: wrap; */
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    width: 90%;
+    height: 80px;
+    margin-top: 100px;
+}
+.aboutTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    /* background-color: brown; */
+    font-size: 50px;
+    width: 90%;
+    height: 80px;
+    margin-top: 100px;
+}
+
+.photoANDtext{
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap-reverse; */
+    width: 90%;
+    /* margin-bottom: 195px; */
+    margin-bottom: 180px;
+}
+.aboutTXT{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    width: 2000px;
+}
+.aboutTXT p{
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 24px;
+   padding: 10px;
+   padding-right: 90px;
+}
+.vanPhotoContainer{
+    display: flex;
+    justify-content: center;
+    width:85%;
+    height: auto;
+    margin-left: 70px;
+    /* background-color:chartreuse; */
+}
+
+@media screen and (max-width:1600px) {
+    .vanPhotoContainer{
+        margin: 0;
+        width: 100%;
+        /* flex-direction: column-reverse; */
+        
+    }
+    .photoANDtext{
+        flex-wrap: wrap-reverse;
+        width: 100%;
+    }
+    .aboutTXT p{
+      
+        padding: 30px;
+        padding-right: 30px;
+    }
+    .aboutTXT{
+        width: auto;
+    }
+}
